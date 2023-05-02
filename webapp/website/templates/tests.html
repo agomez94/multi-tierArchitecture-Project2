@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{%block title%} Tests {%endblock title%}
+{% block content%}
+<div class="mt-5 border border-danger">
+    <form action="/tests/answer_check" method="POST" id="answer_check">
+        {%for questions in question_bank %}
+        <div class="full_question_container">
+            <div class="results">
+                {% if "incorrect" in results[loop.index0] %}
+                    <div class="text-danger">
+                        {{results[loop.index0]}}
+                    </div>
+
+                {% else %}
+                    <div class="text-success">
+                        {{results[loop.index0]}}
+                    </div>
+                {%endif%}
+            </div>
+            
+                <div class="question_text_container">
+                    {{questions[1]}}
+                </div>
+
+                <div class="answers_containers">   
+                
+                    {%for n in range(2,6)%}
+
+                    <input type="radio" id="{{questions[n]}}" name="{{questions[1]}}" value="{{questions[n]}}" required>
+                    <label for="{{questions[n]}}">{{questions[n]}}</label>
+                    <br>
+
+                    {%endfor%}
+                    <br>
+                </div>
+        </div>
+        {%endfor%}
+        <br>
+    
+        <input type="hidden" name="question_bank" value="{{question_bank}}">
+    </form>
+
+    <form action="/tests/new_questions" method="POST" id="new_questions">
+    </form>
+
+    <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary " type="submit" name="answer_check" value="answer_check" form="answer_check">Submit</button>
+        <button class="btn btn-primary " type="submit" name="new_questions" value="new_questions" form="new_questions">New Questions</button>
+    </div>
+</div>
+{% endblock content%}
