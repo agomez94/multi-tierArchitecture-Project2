@@ -1,4 +1,13 @@
 # Building an AWS Multi-Tier Architecture W/ Flask webpage
+
+## Built by: 
+
+- Angel Gomez JR
+- Aaron Parangan
+- Andrew Friend
+
+## Infrastructure by Code Using CloudFormation
+
 Deploying a highly available multi-tier architecture using CloudFormation templates, using amazon RDS w/ Aurora(mySQL).
 
 ## Objective:
