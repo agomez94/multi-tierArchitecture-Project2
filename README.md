@@ -27,6 +27,7 @@ In addition, they decided to redesign their web portal. Customers use the portal
 **Deploy InfrastructureCF.yaml into cloudformation first by creating new stack (adjust parameters ACCORDINGLY)**
 
 **Note:** Take note of the following:
+
 -Load balancer DNS name
 
 -Incorporate Route 53 if possible.
