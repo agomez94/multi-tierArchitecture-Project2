@@ -16,8 +16,6 @@ def about():
 @views.route('/tests')
 def tests():
     response = requests.get('https://l0wvrec6z1.execute-api.us-east-1.amazonaws.com/ST-API/question')
-    # response = requests.get('https://5csqob5f5a.execute-api.us-east-1.amazonaws.com/ap-test/question')
-    # response = requests.get('https://5csqob5f5a.execute-api.us-east-1.amazonaws.com/ap-test/questionid')
     question_bank = response.json()
     print(question_bank)
     results = []
@@ -58,4 +56,3 @@ def new_questions():
     if request.form.get('new_questions') == 'new_questions':
         return redirect(url_for("views.tests"))
 
-    # return redirect(url_for('views.tests'))

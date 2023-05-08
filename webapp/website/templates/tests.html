@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 {%block title%} Tests {%endblock title%}
 {% block content%}
-<div class="mt-5 border border-danger">
+<div class="text-center fs-1 my-3 fw-bolder">
+    Solution Architect Quiz
+</div>
+<div class="mt-5">
     <form action="/tests/answer_check" method="POST" id="answer_check">
         {%for questions in question_bank %}
-        <div class="full_question_container">
+        <div class="full_question_container my-3 p-2">
             <div class="results">
                 {% if "incorrect" in results[loop.index0] %}
                     <div class="text-danger">
