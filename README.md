@@ -27,9 +27,10 @@ Deploying a highly available multi-tier architecture using CloudFormation templa
 
 ## Scenario:
 
-Company wants to create a webportal that has questions for their users to practice for the CCP exam or SAA exam. They recently hired your team (StormTroopers) to work with the engineering teams to build out a proof of concept for their business. To date, they have hosted their client-facing application in an on-premises data center, but they recently decided to move their operations to the cloud in an effort to save money and transform their business with a cloud-first approach. Some members of their team have cloud experience and recommended the AWS Cloud services to build their solution.
+Everett Enterprises is a startup that provides online practice exams for individuals preparing for the AWS Solutions Architect Associate (SAA) and AWS Certified Cloud Practitioner (CCP) exams. They currently host their website and exam questions in an on-premises data center but have decided to move to the cloud due to the financial and performance improvements. It is critical that the website and exam questions are available to users without any interruption, and the company needs a fast, scalable, reliable, and cost-effective solution for their business requirements.
+We have been hired to assist the company with the transition. Your task is to design a cloud-based infrastructure that can meet the needs of the business, including hosting the website, storing exam questions and data, and ensuring high availability and scalability of the system.
+![image](https://user-images.githubusercontent.com/130075700/236952779-8a97b2e4-f9cf-46bd-abfa-31e964421c4e.png)
 
-In addition, they decided to redesign their web portal. Customers use the portal to access their account or if no account exists for the user, the sign-up feature helps them establish their presence on the webportal to gain access to the main website. They would like to have a working prototype in two weeks. You must design an architecture to support this application. Your solution must be fast, durable, scalable, and more cost-effective than their existing on-premises infrastructure.
 
 ## **Remember:** 
 
